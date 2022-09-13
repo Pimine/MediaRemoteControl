@@ -172,24 +172,24 @@ extension RemoteControlManager: AudioSessionActions {
     fileprivate func setupAudioSession() {
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(.playback)
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print(error)
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(audioSessionRouteChange), name: .AVAudioSessionRouteChange, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(audioSessionSilenceSecondaryAudioHint), name: .AVAudioSessionSilenceSecondaryAudioHint, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(audioSessionInterruption), name: .AVAudioSessionInterruption, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(audioSessionRouteChange), name: AVAudioSession.routeChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(audioSessionSilenceSecondaryAudioHint), name: AVAudioSession.silenceSecondaryAudioHintNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(audioSessionInterruption), name: AVAudioSession.interruptionNotification, object: nil)
     }
     
-    func audioSessionRouteChange() {
+    @objc func audioSessionRouteChange() {
         self.didAudioSessionRouteChange?(AVAudioSession.sharedInstance().currentRoute)
     }
     
-    func audioSessionSilenceSecondaryAudioHint(notification: Notification) {
+    @objc func audioSessionSilenceSecondaryAudioHint(notification: Notification) {
         guard let rawValue = notification.userInfo?[AVAudioSessionSilenceSecondaryAudioHintTypeKey] as? UInt else { return }
-        let why = AVAudioSessionSilenceSecondaryAudioHintType(rawValue: rawValue)
+        let why = AVAudioSession.SilenceSecondaryAudioHintType(rawValue: rawValue)
         if why == .begin {
             self.didAnotherAppPrimaryAudioStart?()
         } else {
@@ -197,37 +197,37 @@ extension RemoteControlManager: AudioSessionActions {
         }
     }
     
-    func audioSessionInterruption(notification: Notification) {
+    @objc func audioSessionInterruption(notification: Notification) {
         guard let rawValue = notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt else { return }
-        let why = AVAudioSessionInterruptionType(rawValue: rawValue)
+        let why = AVAudioSession.InterruptionType(rawValue: rawValue)
         if why == .began {
             print("interruption began:\n\(notification.userInfo)")
-        } else if let userInfo = notification.userInfo, let opt = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt, AVAudioSessionInterruptionOptions(rawValue:opt).contains(.shouldResume) {
+        } else if let userInfo = notification.userInfo, let opt = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt, AVAudioSession.InterruptionOptions(rawValue:opt).contains(.shouldResume) {
             self.didSessionInterruptionRouteEnd?()
         }
     }
     
     fileprivate func registerForApplicationStatus() {
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive),
-                                               name: .UIApplicationDidBecomeActive,
+                                               name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
     }
     
-    func applicationDidBecomeActive() {
+    @objc func applicationDidBecomeActive() {
         try? AVAudioSession.sharedInstance().setActive(true)
     }
     
     func tearDownAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
-            try AVAudioSession.sharedInstance().setActive(false, with: .notifyOthersOnDeactivation)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)
+            try AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
         } catch {
             print(error)
         }
         
-        NotificationCenter.default.removeObserver(self, name: .UIApplicationDidBecomeActive, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .AVAudioSessionRouteChange, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .AVAudioSessionSilenceSecondaryAudioHint, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .AVAudioSessionInterruption, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: AVAudioSession.routeChangeNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: AVAudioSession.silenceSecondaryAudioHintNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: AVAudioSession.interruptionNotification, object: nil)
     }
 }

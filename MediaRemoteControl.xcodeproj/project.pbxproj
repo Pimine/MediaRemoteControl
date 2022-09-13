@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20D6BCD8738451AC22B53B18 /* Pods_MediaRemoteControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4470435A3D5CCCCAC7E07D /* Pods_MediaRemoteControlTests.framework */; };
 		303E541F1E79D4EC0047DF63 /* MediaRemoteControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 303E540F1E79D4EB0047DF63 /* MediaRemoteControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		303E54221E79D4EC0047DF63 /* MediaRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303E540D1E79D4EB0047DF63 /* MediaRemoteControl.framework */; };
 		303E54231E79D4EC0047DF63 /* MediaRemoteControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 303E540D1E79D4EB0047DF63 /* MediaRemoteControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -17,8 +16,6 @@
 		303E542E1E79D5360047DF63 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C8D1E75BD3200B119CA /* MediaItem.swift */; };
 		303E542F1E79D57B0047DF63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C611E75BCE900B119CA /* ViewController.swift */; };
 		303E54301E79D57D0047DF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C5F1E75BCE900B119CA /* AppDelegate.swift */; };
-		303E54311E79D6D00047DF63 /* MediaRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303E540D1E79D4EB0047DF63 /* MediaRemoteControl.framework */; };
-		304B70301E799E06001BE716 /* RemoteControlManagerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B702E1E799AAE001BE716 /* RemoteControlManagerSpecs.swift */; };
 		30810C601E75BCE900B119CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C5F1E75BCE900B119CA /* AppDelegate.swift */; };
 		30810C621E75BCE900B119CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C611E75BCE900B119CA /* ViewController.swift */; };
 		30810C651E75BCE900B119CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30810C631E75BCE900B119CA /* Main.storyboard */; };
@@ -26,12 +23,9 @@
 		30810C6A1E75BCE900B119CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30810C681E75BCE900B119CA /* LaunchScreen.storyboard */; };
 		30810C8E1E75BD3200B119CA /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C8D1E75BD3200B119CA /* MediaItem.swift */; };
 		30810C901E75BE7500B119CA /* RemoteControlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810C8F1E75BE7500B119CA /* RemoteControlManager.swift */; };
-		30E1F0511E798BAE0073E4B1 /* MediaRemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1F04F1E798B950073E4B1 /* MediaRemoteControlTests.swift */; };
-		30E1F0551E798BC20073E4B1 /* MediaRemoteControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1F0521E798BBD0073E4B1 /* MediaRemoteControlUITests.swift */; };
 		30E228F01E76AA420047A750 /* RemoteControlActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E228EF1E76AA420047A750 /* RemoteControlActions.swift */; };
 		30ECB3751E75DF0A006183D8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 30ECB3741E75DF0A006183D8 /* Default.png */; };
 		30EF86171E793F4C0039048C /* AudioSessionActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF86161E793F4C0039048C /* AudioSessionActions.swift */; };
-		F5E2662E2A0245982189BAAF /* Pods_MediaRemoteControlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2B98AC2A2C1FFF1B72EF48 /* Pods_MediaRemoteControlUITests.framework */; };
 		F84BDCFBD9FC9B180B1C09AB /* Pods_MediaRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA89D22D5D52DF6B4BE3850 /* Pods_MediaRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,20 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 303E540C1E79D4EB0047DF63;
 			remoteInfo = MediaRemoteControl;
-		};
-		30810C711E75BCE900B119CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 30810C541E75BCE900B119CA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 30810C5B1E75BCE900B119CA;
-			remoteInfo = LockScreen;
-		};
-		30810C7C1E75BCE900B119CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 30810C541E75BCE900B119CA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 30810C5B1E75BCE900B119CA;
-			remoteInfo = LockScreen;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -76,13 +56,10 @@
 /* Begin PBXFileReference section */
 		010AF64CF9AB6134C6C2752A /* Pods_LockScreenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockScreenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBBFFA30DB5E42824DF2F92 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C2B98AC2A2C1FFF1B72EF48 /* Pods_MediaRemoteControlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaRemoteControlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		223E2E9FE9A7502D78A5D66F /* Pods-MediaRemoteControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRemoteControlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaRemoteControlTests/Pods-MediaRemoteControlTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B3CBDFC7E601D46C484D912 /* Pods_SampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		303E540D1E79D4EB0047DF63 /* MediaRemoteControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaRemoteControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		303E540F1E79D4EB0047DF63 /* MediaRemoteControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaRemoteControl.h; sourceTree = "<group>"; };
 		303E54101E79D4EB0047DF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		304B702E1E799AAE001BE716 /* RemoteControlManagerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControlManagerSpecs.swift; sourceTree = "<group>"; };
 		30810C5C1E75BCE900B119CA /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30810C5F1E75BCE900B119CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30810C611E75BCE900B119CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,26 +67,16 @@
 		30810C661E75BCE900B119CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30810C691E75BCE900B119CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30810C6B1E75BCE900B119CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30810C701E75BCE900B119CA /* MediaRemoteControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaRemoteControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30810C761E75BCE900B119CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30810C7B1E75BCE900B119CA /* MediaRemoteControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaRemoteControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30810C811E75BCEA00B119CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30810C8D1E75BD3200B119CA /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		30810C8F1E75BE7500B119CA /* RemoteControlManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControlManager.swift; sourceTree = "<group>"; };
-		30E1F04F1E798B950073E4B1 /* MediaRemoteControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRemoteControlTests.swift; sourceTree = "<group>"; };
-		30E1F0521E798BBD0073E4B1 /* MediaRemoteControlUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaRemoteControlUITests.swift; sourceTree = "<group>"; };
 		30E228EF1E76AA420047A750 /* RemoteControlActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControlActions.swift; sourceTree = "<group>"; };
 		30ECB3741E75DF0A006183D8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		30EF86161E793F4C0039048C /* AudioSessionActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSessionActions.swift; sourceTree = "<group>"; };
 		4FA89D22D5D52DF6B4BE3850 /* Pods_MediaRemoteControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaRemoteControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BFF9809F5BF200AD2EE683 /* Pods-MediaRemoteControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRemoteControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaRemoteControl/Pods-MediaRemoteControl.debug.xcconfig"; sourceTree = "<group>"; };
-		6E0290B88E662CD4D565F046 /* Pods-MediaRemoteControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRemoteControlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaRemoteControlTests/Pods-MediaRemoteControlTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7E4470435A3D5CCCCAC7E07D /* Pods_MediaRemoteControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaRemoteControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6D72FC3FEFE848881EB8EE /* Pods-MediaRemoteControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRemoteControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaRemoteControl/Pods-MediaRemoteControl.release.xcconfig"; sourceTree = "<group>"; };
 		CDA29B134A329D7415EBFF18 /* Pods_LockScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D203A14F00C156B4F143E95E /* Pods_LockScreenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockScreenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CBAA4A9E305BF547357E8D /* Pods-MediaRemoteControlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRemoteControlUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaRemoteControlUITests/Pods-MediaRemoteControlUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D90E156728B8A3AD2D3F00C0 /* Pods-MediaRemoteControlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaRemoteControlUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaRemoteControlUITests/Pods-MediaRemoteControlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6D8738E205C1FB21910E63 /* Pods_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,23 +97,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30810C6D1E75BCE900B119CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				20D6BCD8738451AC22B53B18 /* Pods_MediaRemoteControlTests.framework in Frameworks */,
-				303E54311E79D6D00047DF63 /* MediaRemoteControl.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30810C781E75BCE900B119CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5E2662E2A0245982189BAAF /* Pods_MediaRemoteControlUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -163,8 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				30810C5E1E75BCE900B119CA /* MediaRemoteControl */,
-				30810C731E75BCE900B119CA /* MediaRemoteControl Tests */,
-				30810C7E1E75BCE900B119CA /* MediaRemoteControl UITests */,
 				303E540E1E79D4EB0047DF63 /* MediaRemoteControl */,
 				30810C5D1E75BCE900B119CA /* Products */,
 				4268DDB12E6CBDD8BA36827C /* Pods */,
@@ -176,8 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				30810C5C1E75BCE900B119CA /* Sample.app */,
-				30810C701E75BCE900B119CA /* MediaRemoteControlTests.xctest */,
-				30810C7B1E75BCE900B119CA /* MediaRemoteControlUITests.xctest */,
 				303E540D1E79D4EB0047DF63 /* MediaRemoteControl.framework */,
 			);
 			name = Products;
@@ -198,25 +144,6 @@
 				30810C6B1E75BCE900B119CA /* Info.plist */,
 			);
 			path = MediaRemoteControl;
-			sourceTree = "<group>";
-		};
-		30810C731E75BCE900B119CA /* MediaRemoteControl Tests */ = {
-			isa = PBXGroup;
-			children = (
-				304B702E1E799AAE001BE716 /* RemoteControlManagerSpecs.swift */,
-				30E1F04F1E798B950073E4B1 /* MediaRemoteControlTests.swift */,
-				30810C761E75BCE900B119CA /* Info.plist */,
-			);
-			path = "MediaRemoteControl Tests";
-			sourceTree = "<group>";
-		};
-		30810C7E1E75BCE900B119CA /* MediaRemoteControl UITests */ = {
-			isa = PBXGroup;
-			children = (
-				30E1F0521E798BBD0073E4B1 /* MediaRemoteControlUITests.swift */,
-				30810C811E75BCEA00B119CA /* Info.plist */,
-			);
-			path = "MediaRemoteControl UITests";
 			sourceTree = "<group>";
 		};
 		30EF86181E7940030039048C /* Protocols */ = {
@@ -257,10 +184,6 @@
 			children = (
 				66BFF9809F5BF200AD2EE683 /* Pods-MediaRemoteControl.debug.xcconfig */,
 				9D6D72FC3FEFE848881EB8EE /* Pods-MediaRemoteControl.release.xcconfig */,
-				6E0290B88E662CD4D565F046 /* Pods-MediaRemoteControlTests.debug.xcconfig */,
-				223E2E9FE9A7502D78A5D66F /* Pods-MediaRemoteControlTests.release.xcconfig */,
-				D90E156728B8A3AD2D3F00C0 /* Pods-MediaRemoteControlUITests.debug.xcconfig */,
-				D5CBAA4A9E305BF547357E8D /* Pods-MediaRemoteControlUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -272,8 +195,6 @@
 				010AF64CF9AB6134C6C2752A /* Pods_LockScreenTests.framework */,
 				D203A14F00C156B4F143E95E /* Pods_LockScreenUITests.framework */,
 				4FA89D22D5D52DF6B4BE3850 /* Pods_MediaRemoteControl.framework */,
-				7E4470435A3D5CCCCAC7E07D /* Pods_MediaRemoteControlTests.framework */,
-				1C2B98AC2A2C1FFF1B72EF48 /* Pods_MediaRemoteControlUITests.framework */,
 				0EBBFFA30DB5E42824DF2F92 /* Pods_Sample.framework */,
 				2B3CBDFC7E601D46C484D912 /* Pods_SampleTests.framework */,
 				EB6D8738E205C1FB21910E63 /* Pods_SampleUITests.framework */,
@@ -300,11 +221,10 @@
 			buildConfigurationList = 303E54241E79D4EC0047DF63 /* Build configuration list for PBXNativeTarget "MediaRemoteControl" */;
 			buildPhases = (
 				B57607D371837247D7A09B57 /* [CP] Check Pods Manifest.lock */,
+				303E540A1E79D4EB0047DF63 /* Headers */,
 				303E54081E79D4EB0047DF63 /* Sources */,
 				303E54091E79D4EB0047DF63 /* Frameworks */,
-				303E540A1E79D4EB0047DF63 /* Headers */,
 				303E540B1E79D4EB0047DF63 /* Resources */,
-				997A5496976D64BC3CF10E48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,48 +254,6 @@
 			productReference = 30810C5C1E75BCE900B119CA /* Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		30810C6F1E75BCE900B119CA /* MediaRemoteControlTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 30810C871E75BCEA00B119CA /* Build configuration list for PBXNativeTarget "MediaRemoteControlTests" */;
-			buildPhases = (
-				3072377A5A1448357BDE8274 /* [CP] Check Pods Manifest.lock */,
-				30810C6C1E75BCE900B119CA /* Sources */,
-				30810C6D1E75BCE900B119CA /* Frameworks */,
-				30810C6E1E75BCE900B119CA /* Resources */,
-				F2C85C19D8F2C8C500AEBA69 /* [CP] Embed Pods Frameworks */,
-				1683B74E1273DAE665CC898B /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				30810C721E75BCE900B119CA /* PBXTargetDependency */,
-			);
-			name = MediaRemoteControlTests;
-			productName = LockScreenTests;
-			productReference = 30810C701E75BCE900B119CA /* MediaRemoteControlTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		30810C7A1E75BCE900B119CA /* MediaRemoteControlUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 30810C8A1E75BCEA00B119CA /* Build configuration list for PBXNativeTarget "MediaRemoteControlUITests" */;
-			buildPhases = (
-				C1524ABE1D07756BCE8E3E31 /* [CP] Check Pods Manifest.lock */,
-				30810C771E75BCE900B119CA /* Sources */,
-				30810C781E75BCE900B119CA /* Frameworks */,
-				30810C791E75BCE900B119CA /* Resources */,
-				73C7808C5877A5AFC8BDB461 /* [CP] Embed Pods Frameworks */,
-				B236EBB88F7BFAE1AD9F97D4 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				30810C7D1E75BCE900B119CA /* PBXTargetDependency */,
-			);
-			name = MediaRemoteControlUITests;
-			productName = LockScreenUITests;
-			productReference = 30810C7B1E75BCE900B119CA /* MediaRemoteControlUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -388,29 +266,17 @@
 				TargetAttributes = {
 					303E540C1E79D4EB0047DF63 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = EZKTHB6PL9;
 						ProvisioningStyle = Automatic;
 					};
 					30810C5B1E75BCE900B119CA = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = EZKTHB6PL9;
+						DevelopmentTeam = AV7VG9QBYZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 						};
-					};
-					30810C6F1E75BCE900B119CA = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = EZKTHB6PL9;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 30810C5B1E75BCE900B119CA;
-					};
-					30810C7A1E75BCE900B119CA = {
-						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 30810C5B1E75BCE900B119CA;
 					};
 				};
 			};
@@ -419,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -428,8 +295,6 @@
 			projectRoot = "";
 			targets = (
 				30810C5B1E75BCE900B119CA /* Sample */,
-				30810C6F1E75BCE900B119CA /* MediaRemoteControlTests */,
-				30810C7A1E75BCE900B119CA /* MediaRemoteControlUITests */,
 				303E540C1E79D4EB0047DF63 /* MediaRemoteControl */,
 			);
 		};
@@ -454,141 +319,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30810C6E1E75BCE900B119CA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30810C791E75BCE900B119CA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1683B74E1273DAE665CC898B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaRemoteControlTests/Pods-MediaRemoteControlTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3072377A5A1448357BDE8274 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		73C7808C5877A5AFC8BDB461 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaRemoteControlUITests/Pods-MediaRemoteControlUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		997A5496976D64BC3CF10E48 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaRemoteControl/Pods-MediaRemoteControl-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B236EBB88F7BFAE1AD9F97D4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaRemoteControlUITests/Pods-MediaRemoteControlUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B57607D371837247D7A09B57 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaRemoteControl-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C1524ABE1D07756BCE8E3E31 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F2C85C19D8F2C8C500AEBA69 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaRemoteControlTests/Pods-MediaRemoteControlTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -620,23 +369,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30810C6C1E75BCE900B119CA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				304B70301E799E06001BE716 /* RemoteControlManagerSpecs.swift in Sources */,
-				30E1F0511E798BAE0073E4B1 /* MediaRemoteControlTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		30810C771E75BCE900B119CA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				30E1F0551E798BC20073E4B1 /* MediaRemoteControlUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -644,16 +376,6 @@
 			isa = PBXTargetDependency;
 			target = 303E540C1E79D4EB0047DF63 /* MediaRemoteControl */;
 			targetProxy = 303E54201E79D4EC0047DF63 /* PBXContainerItemProxy */;
-		};
-		30810C721E75BCE900B119CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 30810C5B1E75BCE900B119CA /* Sample */;
-			targetProxy = 30810C711E75BCE900B119CA /* PBXContainerItemProxy */;
-		};
-		30810C7D1E75BCE900B119CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 30810C5B1E75BCE900B119CA /* Sample */;
-			targetProxy = 30810C7C1E75BCE900B119CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -684,7 +406,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = EZKTHB6PL9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -695,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Viacom.MediaRemoteControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -708,7 +430,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = EZKTHB6PL9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -719,7 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Viacom.MediaRemoteControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -825,13 +547,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EZKTHB6PL9;
+				DEVELOPMENT_TEAM = AV7VG9QBYZ;
 				INFOPLIST_FILE = "$(SRCROOT)/MediaRemoteControl/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Viacom.LockScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -840,77 +562,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EZKTHB6PL9;
+				DEVELOPMENT_TEAM = AV7VG9QBYZ;
 				INFOPLIST_FILE = "$(SRCROOT)/MediaRemoteControl/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Viacom.LockScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		30810C881E75BCEA00B119CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E0290B88E662CD4D565F046 /* Pods-MediaRemoteControlTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				DEVELOPMENT_TEAM = EZKTHB6PL9;
-				INFOPLIST_FILE = "MediaRemoteControl Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Viacom.MediaRemoteControlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
-			};
-			name = Debug;
-		};
-		30810C891E75BCEA00B119CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223E2E9FE9A7502D78A5D66F /* Pods-MediaRemoteControlTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				DEVELOPMENT_TEAM = EZKTHB6PL9;
-				INFOPLIST_FILE = "MediaRemoteControl Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Viacom.MediaRemoteControlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
-			};
-			name = Release;
-		};
-		30810C8B1E75BCEA00B119CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D90E156728B8A3AD2D3F00C0 /* Pods-MediaRemoteControlUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "MediaRemoteControl UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Viacom.MediaRemoteControlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = MediaRemoteControl;
-			};
-			name = Debug;
-		};
-		30810C8C1E75BCEA00B119CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5CBAA4A9E305BF547357E8D /* Pods-MediaRemoteControlUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "MediaRemoteControl UITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Viacom.MediaRemoteControlUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = MediaRemoteControl;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -940,24 +598,6 @@
 			buildConfigurations = (
 				30810C851E75BCEA00B119CA /* Debug */,
 				30810C861E75BCEA00B119CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		30810C871E75BCEA00B119CA /* Build configuration list for PBXNativeTarget "MediaRemoteControlTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				30810C881E75BCEA00B119CA /* Debug */,
-				30810C891E75BCEA00B119CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		30810C8A1E75BCEA00B119CA /* Build configuration list for PBXNativeTarget "MediaRemoteControlUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				30810C8B1E75BCEA00B119CA /* Debug */,
-				30810C8C1E75BCEA00B119CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
